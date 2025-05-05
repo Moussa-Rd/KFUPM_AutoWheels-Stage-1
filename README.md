@@ -53,4 +53,15 @@ We're proud of what we’ve built, and we hope you enjoy checking it out!
 
 3. **Integration**  
    - Combined segmentation with map-based navigation  
-   - Developed modular utilities for testing both independently and as a system  
+   - Developed modular utilities for testing both independently and as a system
+
+
+  Extra : *******
+
+
+  
+Messing around with Control Systems has been a blast. It's like being in a video game, but way cooler 'cause it's real life!
+This challenge has taught us a ton about making split-second decisions, which we're sure will come in handy down the road.
+Plus, teaming up with folks from all majors has been a blast. Who knew self-driving cars could bring so many cool people together?
+
+  
