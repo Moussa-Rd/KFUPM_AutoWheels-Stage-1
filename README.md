@@ -30,6 +30,8 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
 | **Control** | Stanley Steering + PID Throttle |
 | **Map** | Acc Setup_Real_Senario map |
 
+---
+
 ## 🏁 Results
 
 - ✅ **Accurate QCar path-following** with smooth ramped control  
@@ -39,6 +41,7 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
 - ✅ **System remained stable** throughout full trajectory duration
 
 
+---
 
 ### 🔍 Perception Layer
 - **YOLOv8 segmentation model** trained to detect:
@@ -47,6 +50,8 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
   - Yield signs
 - Traffic light status is determined using **HSV brightness analysis** on detected boxes
 - **Stop signs** are filtered by bounding box width and center position
+
+---
 
 ## 🧠 Development Process
 
@@ -58,6 +63,8 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
 - Built EKF to estimate QCar state using GPS and IMU data
 - Developed PID-based speed control and Stanley-based steering
 - Tested dynamic pause logic triggered by stop signs or red lights
+
+---
 
 
 ## 📂 Repository Structure
@@ -88,13 +95,17 @@ KFUPMAutoDrive-Simulation/
 3.**Launch experiment**
   - First run Setup_Real_Senario.py
   - Then run vehicle_control_yolo_vf.py (alongside all the necessary libraries attached to this repository)
-   
+
+---
+
+
 ## ✨ Reflections
 
 Working on this simulation felt like building a real autonomous car, honestly it kind of is! 
 From tuning controllers to tracking RGB frames in real-time, this challenge pushed our limits in the best way.
 It's amazing how teamwork, code, and robotics can come together to make something that moves.
 
+---
 
 ## 🗂️ File Descriptions
 ---
