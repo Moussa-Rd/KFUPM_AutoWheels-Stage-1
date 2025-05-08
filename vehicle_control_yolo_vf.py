@@ -37,7 +37,7 @@ imageHeight = 480
 # ====================== Helper Funcion ====================================
 
 def check_traffic_light(x1, y1, x2, y2, im_cpu):
-    # x1, y1, x2, y2 = traffic_box
+  
     d = 0.3 * (x2 - x1)
     R_center = (int((x1 + x2) / 2), int((3 * y1 + y2) / 4))
     Y_center = (int((x1 + x2) / 2), int((y1 + y2) / 2))
@@ -244,12 +244,11 @@ def vision_process(kill_evt: Event, stop_evt: Event, red_evt: Event, yolo_model)
                 continue
 
             label_text = f"{names[cls]} {conf:.2f}"
-            # print(f"[Vision] Detected {label_text} - box size: {x2-x1}x{y2-y1}")
+          
 
             if cls == 9:  # traffic light
                 color_status = check_traffic_light(x1, y1, x2, y2, frame)
                 cx, cy = (x1+x2)/2, (y1+y2)/2
-                # print(f"[{label_text} - ({color_status}) - box size: {x2-x1}x{y2-y1} - Center ({cx:.1f}, {cy:.1f})] - Center condition: {0.2*w_img < cx < 0.8*w_img}")
                 if (TF_L_THRESHOLD < x2-x1 < TF_U_THRESHOLD) and (0.25*w_img < cx < 0.75*w_img):
                     if (color_status != 'green') and not stop_evt.is_set():
                         print(f"  → CLOSE TO: ({label_text} - {color_status}) - box size: {x2-x1}x{y2-y1}")
@@ -268,10 +267,6 @@ def vision_process(kill_evt: Event, stop_evt: Event, red_evt: Event, yolo_model)
                         stop_evt.set()
                         Thread(target=lambda: (time.sleep(2), stop_evt.clear()),
                                 daemon=True).start()
-            # if candidates:
-                
-            # always print box size
-            # print(f"[Vision] Detected {names[cls]} – bbox size: {size}px")
 
 
         dt = time.time()-t0
