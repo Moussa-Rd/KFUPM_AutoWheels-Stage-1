@@ -1,7 +1,7 @@
 # KFUPM AutoWheels 🚗
 ### [Competition Submission – Stage 1](https://youtu.to_be_done)
 
-![Simulation Snapshot](https://github.com/Moussa-Rd/KFUPM_AutoWheels-Stage-1/KFUPM-AutoWheels)
+![Simulation Snapshot](https://github.com/Moussa-Rd/KFUPM_AutoWheels-Stage-1/KFUPM-AutoWheels.png)
 
 ---
 
