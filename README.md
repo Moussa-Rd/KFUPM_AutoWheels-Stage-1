@@ -72,10 +72,9 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
 ```
 KFUPMAutoDrive-Simulation/
 ├── vehicle_control_yolo_vf.py/
-│   ├── vehicle_control.py       # EKF + Stanley + PID controller
-│   ├── vision_detection.py      # YOLOv8s-based sign & light detection
-├── models/
-│   └── yolov8s-seg.pt           # Pretrained YOLOv8s model (FineTuned)
+│   ├── vehicle_control process       # EKF + Stanley + PID controller
+│   ├── vision_detection process      # YOLOv8s-based sign & light detection
+├── yolov8s-seg.pt           # Pretrained YOLOv8s model (FineTuned)
 ├── requirements.txt             # Python dependencies
 └── README.md
 ```
@@ -84,12 +83,11 @@ KFUPMAutoDrive-Simulation/
 
 ## 🛠️ How to Run
 
-1. **Install Python dependencies**
-   ---bash
-   
+1. **Python dependencies**
+
         pip install -r requirements.txt
    
-2. **Start QLabs**
+3. **Start QLabs**
      Make sure QLabs is open and all previous real-time models are terminated.
 
 3.**Launch experiment**
