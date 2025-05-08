@@ -71,12 +71,11 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
 
 ```
 KFUPMAutoDrive-Simulation/
-├── control_vision/
+├── vehicle_control_yolo_vf.py/
 │   ├── vehicle_control.py       # EKF + Stanley + PID controller
 │   ├── vision_detection.py      # YOLOv8s-based sign & light detection
 ├── models/
 │   └── yolov8s-seg.pt           # Pretrained YOLOv8 model (FineTuned)
-├── vehicle_control_yolo_vf.py   # Entry point for launching both control & vision
 ├── requirements.txt             # Python dependencies
 └── README.md
 ```
