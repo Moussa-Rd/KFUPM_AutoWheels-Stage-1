@@ -6,7 +6,7 @@
 
 ---
 
-# 📘 Competition Submission – ReadMe
+# 📘 ReadMe
 
 ## 👋 Overview
 
