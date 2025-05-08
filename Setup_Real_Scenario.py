@@ -39,8 +39,6 @@ def main():
 
     setup(qlabs=qlabs, initialPosition = [-1.205, -0.83, 0.005], initialOrientation = [0, 0, -44.7])
 
-    #spawing active components (traffic lights)
-    # initialize 7 traffic light instances in qlabs
     trafficLight1 = QLabsTrafficLight(qlabs)
     trafficLight2 = QLabsTrafficLight(qlabs)
     trafficLight3 = QLabsTrafficLight(qlabs)
@@ -286,8 +284,7 @@ def setup(qlabs, initialPosition = [-1.205, -0.83, 0.005], initialOrientation = 
 
     # define rt model path
     rtModel = r"C:\Users\musta\Desktop\ACC ref\ACC_Resources_v_latest\src\libraries\resources\rt_models\QCar2\QCar2_Workspace_studio"
-    # os.path.normpath(os.path.join(os.environ['RTMODELS_DIR'], 'QCar2/QCar2_Workspace_studio'))
-    # Start spawn model
+  
     QLabsRealTime().start_real_time_model(rtModel)
 
     return car2
@@ -295,7 +292,7 @@ def setup(qlabs, initialPosition = [-1.205, -0.83, 0.005], initialOrientation = 
 #function to terminate the real time model running
 def terminate():
     rtModel =  r"C:\Users\musta\Desktop\ACC ref\ACC_Resources_v_latest\src\libraries\resources\rt_models\QCar2\QCar2_Workspace_studio"
-    # os.path.normpath(os.path.join(os.environ['RTMODELS_DIR'], 'QCar2/QCar2_Workspace_studio'))
+
     QLabsRealTime().terminate_real_time_model(rtModel)
 if __name__ == '__main__':
     main()
