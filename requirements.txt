@@ -1,0 +1,3 @@
+torch                    2.7.0+cu118
+ultralytics              8.3.127
+quanser-api              2024.10.17
