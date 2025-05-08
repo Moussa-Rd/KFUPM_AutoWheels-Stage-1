@@ -75,7 +75,7 @@ KFUPMAutoDrive-Simulation/
 │   ├── vehicle_control.py       # EKF + Stanley + PID controller
 │   ├── vision_detection.py      # YOLOv8s-based sign & light detection
 ├── models/
-│   └── yolov8s-seg.pt           # Pretrained YOLOv8 model (FineTuned)
+│   └── yolov8s-seg.pt           # Pretrained YOLOv8s model (FineTuned)
 ├── requirements.txt             # Python dependencies
 └── README.md
 ```
