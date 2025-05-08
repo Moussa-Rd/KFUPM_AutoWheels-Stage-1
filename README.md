@@ -29,11 +29,6 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
 | **Control** | Stanley Steering + PID Throttle |
 | **Map** | Acc Setup_Real_Senario map |
 
-> Real-time object detection is handled via RGB image processing and HSV color analysis.  
-> EKF fuses QCar GPS and gyroscope for localization.  
-> Controller logic adapts to visual cues from stop signs and traffic lights.
-
-
 ## 🏁 Results
 
 - ✅ **Accurate QCar path-following** with smooth ramped control  
