@@ -119,6 +119,4 @@ It's amazing how teamwork, code, and robotics can come together to make somethin
 **PS**: Screen recording affects the performance simulation  
 
 
-Messing around with Control Systems has been a blast. It's like being in a video game, but way cooler 'cause it's real life! This challenge has taught us a ton about making split-second decisions, which we're sure will come in handy down the road. Plus, teaming up with folks from all majors has been a blast. Who knew self-driving cars could bring so many cool people together?
-
 
