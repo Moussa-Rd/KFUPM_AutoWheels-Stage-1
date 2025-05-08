@@ -48,7 +48,6 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
   - Stop signs
   - Traffic lights
   - Yield signs
-- Traffic light status is determined using **HSV brightness analysis** on detected boxes
 - **Stop signs** are filtered by bounding box width and center position
 
 ---
@@ -57,7 +56,6 @@ This repository combines **intelligent object detection**, **dynamic vehicle con
 
 ### 1. Object Detection
 - Integrated YOLOv8 (via Ultralytics) to detect key road signs
-- Classified traffic light color status using HSV brightness masks
 
 ### 2. Control System
 - Built EKF to estimate QCar state using GPS and IMU data
